@@ -21,6 +21,8 @@ alias reboot='sudo-command reboot'
 alias poweroff='sudo-command poweroff'
 alias rc-service='sudo-command rc-service'
 alias rc-status='sudo-command rc-status'
+alias emerge='sudo-command emerge'
+alias eselect='sudo-command eselect'
 
 # grub
 abbr grub 'LANGUAGE=en_US.UTF-8 LANG=en_US.UTF-8 sudo grub-mkconfig -o /boot/grub/grub.cfg'

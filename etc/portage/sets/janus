@@ -2,6 +2,7 @@
 app-i18n/fcitx
 app-i18n/fcitx-configtool
 app-i18n/fcitx-rime
+app-i18n/rime-ice
 
 
 # 编程工具
@@ -11,23 +12,26 @@ app-editors/neovim
 # niri
 gui-apps/foot
 gui-apps/fuzzel
-gui-apps/qt6ct
+gui-apps/qt6ct # qt6主题管理
 gui-apps/swaybg
-gui-apps/waybar
+gui-apps/waybar # 任务栏
 gui-apps/waypaper
 gui-apps/wl-clipboard
 gui-apps/xwayland-satellite
 gui-wm/niri
-media-fonts/maple-mono
 app-misc/brightnessctl
-app-misc/yazi
+app-misc/yazi # 终端文件浏览器
 app-shells/fish
 app-misc/fastfetch
 net-proxy/mihomo
+gui-apps/fuzzel # 软件菜单
+www-client/firefox #浏览器
 # GUI声音管理
 media-sound/alsa-utils
 media-video/pipewire
 media-sound/playerctl
+# 游戏
+games-util/steam-launcher
 
 # 系统工具
 net-wireless/iwd
@@ -35,3 +39,6 @@ sys-devel/bc # 计算器
 x11-misc/ydotool # 键盘模拟鼠标
 sys-apps/eza # 高级版ls
 net-misc/chrony # 时间同步
+
+# gentoo管理
+app-eselect/eselect-repository # 管理overlay

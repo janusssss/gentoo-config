@@ -48,6 +48,13 @@
 /etc/udev/rules.d/*
 !/etc/udev/rules.d/99-uinput.rules
 
+# 字体
+!/etc/fonts/
+/etc/fonts/*
+!/etc/fonts/conf.d/
+/etc/fonts/conf.d/*
+!/etc/fonts/conf.d/00-maple-mono.conf
+
 # root配置
 !/root/
 /root/*
@@ -62,6 +69,7 @@
 !/etc/portage/
 /etc/portage/gnupg/
 /etc/portage/kernel_key.pem
+/etc/portage/savedconfig/
 
 
 !/README.md
