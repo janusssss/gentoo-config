@@ -48,3 +48,7 @@ sys-boot/grub
 
 # gentoo
 app-portage/gentoolkit
+
+# 通信软件
+net-im/wechat
+net-im/tencent-qq
