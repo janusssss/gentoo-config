@@ -7,3 +7,7 @@ gui-apps/waybar network niri tray
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libdbusmenu-16.04.0-r4 gtk3
+
+app-i18n/rime-ice lua theme
+app-i18n/librime-lua -lua_single_target_lua5-1 lua_single_target_lua5-4
+

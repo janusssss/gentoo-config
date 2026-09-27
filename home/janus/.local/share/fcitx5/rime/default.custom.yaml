@@ -1,0 +1,6 @@
+patch:
+  schema_list:
+    - {schema: double_pinyin_flypy}
+    - {schema: rime_ice}
+    - {schema: luna_pinyin}
+

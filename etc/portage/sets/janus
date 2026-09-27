@@ -2,6 +2,7 @@
 app-i18n/fcitx
 app-i18n/fcitx-configtool
 app-i18n/fcitx-rime
+app-i18n/rime-ice 
 
 
 # 编程工具
@@ -44,3 +45,6 @@ app-shells/starship
 app-admin/sysklogd
 sys-kernel/gentoo-kernel-bin
 sys-boot/grub
+
+# gentoo
+app-portage/gentoolkit

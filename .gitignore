@@ -31,6 +31,7 @@
 !/home/janus/.local/share/fcitx5/rime/
 /home/janus/.local/share/fcitx5/rime/*
 !/home/janus/.local/share/fcitx5/rime/default.yaml
+!/home/janus/.local/share/fcitx5/rime/default.custom.yaml
 # electron类软件兼容wayland配置
 !/usr/
 /usr/*
