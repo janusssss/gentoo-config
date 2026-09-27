@@ -49,6 +49,8 @@
 !/etc/udev/rules.d/
 /etc/udev/rules.d/*
 !/etc/udev/rules.d/99-uinput.rules
+# 设置时区
+!/etc/localtime
 
 # root配置
 !/root/
