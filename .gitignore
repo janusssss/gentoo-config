@@ -51,6 +51,10 @@
 !/etc/udev/rules.d/99-uinput.rules
 # 设置时区
 !/etc/localtime
+# 主机名称
+!/etc/conf.d/
+/etc/conf.d/*
+!/etc/conf.d/hostname
 
 # root配置
 !/root/
