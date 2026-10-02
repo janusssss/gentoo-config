@@ -12,19 +12,16 @@ function ls
 end
 
 # 命令加sudo
-function sudo-command
-    set -l cmd $argv[1]
-    set -l args $argv[2..-1]
-    command sudo $cmd $args
+set -l cmds \
+    rc-update rc-service rc-status emerge eselect \
+    chmod pkill \
+    reboot poweroff
+
+for cmd in $cmds
+    function $cmd --inherit-variable cmd
+        sudo $cmd $argv
+    end
 end
-alias reboot='sudo-command reboot'
-alias poweroff='sudo-command poweroff'
-alias rc-service='sudo-command rc-service'
-alias rc-status='sudo-command rc-status'
-alias emerge='sudo-command emerge'
-alias eselect='sudo-command eselect'
-alias rc-update='sudo rc-update'
-alias chmod='sudo chmod'
 
 # grub
 abbr grub 'LANGUAGE=en_US.UTF-8 LANG=en_US.UTF-8 sudo grub-mkconfig -o /boot/grub/grub.cfg'
