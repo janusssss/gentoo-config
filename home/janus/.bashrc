@@ -17,4 +17,4 @@ fi
 
 # 开机自动启动niri
 # 非开机启动fish
-[ "$(tty)" = "/dev/tty1" ] && niri || fish
+[ "$(tty)" = "/dev/tty1" ] && dbus-run-session niri || fish
