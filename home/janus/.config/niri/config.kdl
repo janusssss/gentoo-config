@@ -5,6 +5,7 @@ include "binds.kdl"
 include "output.kdl"
 // 环境变量
 include "environment.kdl"
+include "rule.kdl" // 窗口规则
 
 
 // This config is in the KDL format: https://kdl.dev

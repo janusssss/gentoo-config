@@ -1,5 +1,4 @@
 
-
 binds {
     Mod+Z { spawn "fuzzel"; }
 
