@@ -7,7 +7,7 @@ spawn-at-startup "fcitx5"
 // 启动键盘模拟鼠标,openrc环境下udev没有生效,需要手动触发
 spawn-at-startup "sh" "-c" "sleep 3 && sudo modprobe -r uinput && sudo modprobe uinput && ydotoold"
 // 更换壁纸
-spawn-at-startup "sh" "-c" "sleep 0.5 && waypaper --random --back swaybg"
+spawn-at-startup "sh" "-c" "waypaper --random --back swaybg"
 // 自动旋转屏幕
 spawn-at-startup "~/.config/niri/script/rotate.sh"  
 // 剪贴板守护进程

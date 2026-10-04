@@ -55,6 +55,10 @@
 !/etc/conf.d/
 /etc/conf.d/*
 !/etc/conf.d/hostname
+# grub配置
+!/etc/default/
+/etc/default/*
+!/etc/default/grub
 
 # root配置
 !/root/
