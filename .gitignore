@@ -20,6 +20,7 @@
 /home/janus/.config/nvim/lazy-lock.json
 !/home/janus/.config/fish/
 !/home/janus/.config/waybar/
+!/home/janus/.config/fuzzel/
 
 # rime
 !/home/janus/.local/
