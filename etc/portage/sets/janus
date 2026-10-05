@@ -46,7 +46,7 @@ app-portage/pfl
 sys-kernel/linux-firmware
 app-admin/sudo
 app-shells/starship
-app-admin/sysklogd
+app-admin/sysklogd # 内核日志
 sys-kernel/gentoo-kernel-bin
 sys-boot/grub
 
@@ -60,3 +60,4 @@ net-im/tencent-qq
 
 # surface设备
 sys-kernel/surface-sources
+gnome-extra/iio-sensor-proxy # 监控屏幕翻转
