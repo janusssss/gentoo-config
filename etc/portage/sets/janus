@@ -8,6 +8,9 @@ app-i18n/rime-ice
 # 编程工具
 dev-vcs/git
 app-editors/neovim
+app-containers/docker
+app-containers/docker-cli
+app-containers/docker-compose
 
 # niri
 gui-apps/foot
@@ -29,6 +32,7 @@ www-client/firefox-bin
 app-misc/cliphist # 粘贴板保存内容
 app-shells/fzf # cliphist-tui依赖它
 app-misc/nwg-look # gtk主题管理
+games-util/steam-launcher
 # GUI声音管理
 media-sound/alsa-utils
 media-video/pipewire
@@ -58,5 +62,3 @@ app-eselect/eselect-repository # eselect仓库管理
 net-im/wechat
 net-im/tencent-qq
 
-# surface设备
-sys-kernel/surface-sources

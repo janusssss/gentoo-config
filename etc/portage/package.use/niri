@@ -10,4 +10,4 @@ gui-apps/waybar network niri tray
 
 app-i18n/rime-ice lua theme
 app-i18n/librime-lua -lua_single_target_lua5-1 lua_single_target_lua5-4
-
+media-libs/fontconfig abi_x86_32
