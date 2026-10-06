@@ -1,0 +1,63 @@
+# 输入法
+app-i18n/fcitx
+app-i18n/fcitx-configtool
+app-i18n/fcitx-rime
+app-i18n/rime-ice 
+
+
+# 编程工具
+dev-vcs/git
+app-editors/neovim
+
+# niri
+gui-apps/foot
+gui-apps/fuzzel
+gui-apps/qt6ct
+gui-apps/swaybg
+gui-apps/waybar
+gui-apps/waypaper
+gui-apps/wl-clipboard
+gui-apps/xwayland-satellite
+gui-wm/niri
+media-fonts/maple-mono
+app-misc/brightnessctl
+app-misc/yazi
+app-shells/fish
+app-misc/fastfetch
+net-proxy/mihomo
+www-client/firefox-bin 
+app-misc/cliphist # 粘贴板保存内容
+app-shells/fzf # cliphist-tui依赖它
+app-misc/nwg-look # gtk主题管理
+# GUI声音管理
+media-sound/alsa-utils
+media-video/pipewire
+media-sound/playerctl
+
+# 系统工具
+net-wireless/iwd
+sys-devel/bc # 计算器
+x11-misc/ydotool # 键盘模拟鼠标
+sys-apps/eza # 高级版ls
+net-misc/chrony # 时间同步
+sys-process/btop # 资源监控
+
+app-portage/pfl
+sys-kernel/linux-firmware
+app-admin/sudo
+app-shells/starship
+app-admin/sysklogd # 内核日志
+sys-kernel/gentoo-kernel-bin
+sys-boot/grub
+
+# gentoo
+app-portage/gentoolkit # equery相关查询功能
+app-eselect/eselect-repository # eselect仓库管理
+
+# 通信软件
+net-im/wechat
+net-im/tencent-qq
+
+# surface设备
+sys-kernel/surface-sources
+gnome-extra/iio-sensor-proxy # 监控屏幕翻转
