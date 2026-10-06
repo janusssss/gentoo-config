@@ -1,8 +1,8 @@
 # 输入法
-app-i18n/fcitx
-app-i18n/fcitx-configtool
-app-i18n/fcitx-rime
-app-i18n/rime-ice 
+app-i18n/fcitx # 输入法框架
+app-i18n/fcitx-configtool # fxitx配置工具
+app-i18n/fcitx-rime # rime输入法本体
+app-i18n/rime-ice # 给rime加词库与不同的输入法 
 
 
 # 编程工具
@@ -11,6 +11,9 @@ app-editors/neovim
 app-containers/docker
 app-containers/docker-cli
 app-containers/docker-compose
+app-text/sdcv # 终端词典
+app-dicts/stardict-langdao-en-zh-gb # 英中
+app-dicts/stardict-langdao-zh-en-gb # 中英
 
 # niri
 gui-apps/foot
@@ -58,7 +61,9 @@ sys-boot/grub
 app-portage/gentoolkit # equery相关查询功能
 app-eselect/eselect-repository # eselect仓库管理
 
-# 通信软件
-net-im/wechat
-net-im/tencent-qq
-
+# 日常生活使用的软件
+net-im/wechat # 微信
+net-im/tencent-qq # qq
+app-office/hledger # 记账工具
+app-office/hledger-iadd # 给hledger加补全的
+      
