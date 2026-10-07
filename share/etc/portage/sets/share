@@ -41,6 +41,7 @@ x11-misc/ydotool # 键盘模拟鼠标
 sys-apps/eza # 高级版ls
 net-misc/chrony # 时间同步
 sys-process/btop # 资源监控
+net-wireless/bluetui # 管理蓝牙
 
 app-portage/pfl
 sys-kernel/linux-firmware

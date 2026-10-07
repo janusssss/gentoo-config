@@ -13,4 +13,5 @@ app-office/hledger-iadd # 给hledger加补全的
 
 # 游戏
 games-util/steam-launcher
+games-util/game-device-udev-rules # 配置微软手柄udev规则
 
