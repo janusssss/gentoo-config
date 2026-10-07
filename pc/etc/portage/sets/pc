@@ -5,8 +5,12 @@ app-containers/docker-compose
 app-text/sdcv # 终端词典
 app-dicts/stardict-langdao-en-zh-gb # 英中
 app-dicts/stardict-langdao-zh-en-gb # 中英
+dev-build/just #python相关
 
 # 日常生活使用的软件
 app-office/hledger # 记账工具
 app-office/hledger-iadd # 给hledger加补全的
-      
+
+# 游戏
+games-util/steam-launcher
+
