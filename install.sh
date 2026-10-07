@@ -11,27 +11,62 @@ usage() {
 
 for arg in "$@"; do
   case "$arg" in
-    --dry-run) dry_run=1 ;;
-    -h|--help) usage; exit 0 ;;
-    *) echo "未知参数: $arg" >&2; usage >&2; exit 2 ;;
+  --dry-run) dry_run="try" ;;
+  --pc) platform="pc" ;;
+  --surface) platform="surface" ;;
+  -h | --help)
+    usage
+    exit 0
+    ;;
+  *)
+    echo "未知参数: $arg" >&2
+    usage >&2
+    exit 2
+    ;;
   esac
 done
 
-cd ./share
-git ls-files -z | while IFS= read -r -d '' file; do
-  dest="/$file"
-  if [ "$dry_run" = 1 ]; then
-    if [ -L "$file" ]; then
-      echo "[dry-run] cp -a -- ./share/$file -> $dest"
-    else
-      echo "[dry-run] ln -s -- $(realpath "$file") -> $dest"
-    fi
-    continue
-  fi
-  rm -rf "$dest"
-  if [ -L "$file" ]; then
-    cp -a "$file" "$dest"
+if [[ -z ${platform:-} ]]; then
+  exit "no platform"
+fi
+
+make_link() {
+  local path="$1"
+  local dest="/$path"
+  run_or_try "rm -rf $dest"
+  if [ -L "$path" ]; then
+    run_or_try "cp -d $path $dest"
   else
-    ln -s "$(realpath "$file")" "$dest"
+    target=$(realpath "$path")
+    run_or_try "ln -s $target $dest"
   fi
-done
+}
+
+run_or_try() {
+  if [[ $dry_run == "try" ]]; then
+    echo $1
+    return
+  fi
+  eval $1
+}
+
+make_link_curr_dir() {
+  git ls-files | while IFS= read -r file; do
+    make_link "$file"
+  done
+}
+
+cd ./share
+make_link_curr_dir
+
+if [[ $platform == "surface" ]]; then
+  cd ../surface
+  make_link_curr_dir
+fi
+
+if [[ $platform == "pc" ]]; then
+  cd ../pc
+  make_link_curr_dir
+fi
+
+echo "make config in $platform done"

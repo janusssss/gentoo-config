@@ -58,6 +58,4 @@ app-eselect/eselect-repository # eselect仓库管理
 net-im/wechat
 net-im/tencent-qq
 
-# surface设备
-sys-kernel/surface-sources
-gnome-extra/iio-sensor-proxy # 监控屏幕翻转
+
