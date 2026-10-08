@@ -33,6 +33,8 @@ app-misc/nwg-look # gtk主题管理
 media-sound/alsa-utils
 media-video/pipewire
 media-sound/playerctl
+app-text/pdfarranger # pdf编译器
+
 
 # 系统工具
 net-wireless/iwd
