@@ -43,6 +43,10 @@ binds {
 
     // 剪贴板程序，对应aur包shorinclip-git
     Mod+Alt+V hotkey-overlay-title="剪贴板 Clipboard" {spawn-sh "footclient -a cliphist-tui cliphist-tui";} 
+
+    // 临时开一个浮动终端
+    Mod+Slash hotkey-overlay-title="临时终端 Quick Terminal" {spawn "footclient" "-a" "quickterminal";}
+
   }
 
 
