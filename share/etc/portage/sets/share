@@ -60,6 +60,7 @@ sys-boot/grub
 # gentoo
 app-portage/gentoolkit # equery相关查询功能
 app-eselect/eselect-repository # eselect仓库管理
+app-portage/pycargoebuild # 处理cargo ebuild依赖
 
 # 通信软件
 net-im/wechat
