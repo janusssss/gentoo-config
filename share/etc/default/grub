@@ -75,3 +75,5 @@ GRUB_DISABLE_LINUX_PARTUUID=false
 # This is useful, for example, to allow users who can't see the screen
 # to know when they can make a choice on the menu.
 #GRUB_INIT_TUNE="60 800 1"
+# 探测别的系统
+GRUB_DISABLE_OS_PROBER=false

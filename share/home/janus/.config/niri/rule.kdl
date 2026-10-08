@@ -9,3 +9,11 @@ window-rule{
 	default-floating-position x=0 y=18 relative-to="top"
 }
 
+
+window-rule {                                                                                            
+     match app-id="firefox"
+     match app-id="BambuStudio"
+     match app-id="steam_app_1903340"
+     match app-id="steam_app_2358720"
+     open-maximized-to-edges true
+       }

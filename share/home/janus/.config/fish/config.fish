@@ -14,8 +14,8 @@ end
 # 命令加sudo
 set -l cmds \
     rc-update rc-service rc-status emerge eselect \
-    chmod pkill \
-    reboot poweroff
+    chmod pkill mount umount arch-chroot \
+        reboot poweroff
 
 for cmd in $cmds
     function $cmd --inherit-variable cmd
