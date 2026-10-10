@@ -1,2 +1,3 @@
 >=llvm-runtimes/libclc-23
 >=media-libs/libdisplay-info-0.4.0
+>=dev-libs/tree-sitter-0.27

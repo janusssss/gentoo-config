@@ -25,7 +25,7 @@ app-misc/yazi
 app-shells/fish
 app-misc/fastfetch
 net-proxy/mihomo
-www-client/firefox-bin 
+www-client/firefox 
 app-misc/cliphist # 粘贴板保存内容
 app-shells/fzf # cliphist-tui依赖它
 app-misc/nwg-look # gtk主题管理
