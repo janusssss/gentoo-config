@@ -14,6 +14,10 @@ if [[ $- != *i* ]]; then
 fi
 
 # Put your fun stuff here.
+if [[ -n $SSH_CONNECTION ]]; then
+  export XDG_RUNTIME_DIR=/run/user/1000
+  export WAYLAND_DISPLAY=$(ls -l /run/user/1000 | grep -oE "wayland-[0-9]+$")
+fi
 
 # 开机自动启动niri
 # 非开机启动fish
