@@ -49,6 +49,12 @@ sys-apps/arch-chroot # chroot环境工具
 sys-fs/genfstab # 自动生成fstab文件
 sys-boot/os-prober # 探测别的系统
 
+# mDNS服务
+net-dns/avahi 
+sys-auth/nss-mdns
+net-analyzer/nmap # 网络探测工具
+net-analyzer/tcpdump # 抓包工具
+
 app-portage/pfl
 sys-kernel/linux-firmware
 app-admin/sudo

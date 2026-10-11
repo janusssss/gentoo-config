@@ -15,7 +15,8 @@ end
 set -l cmds \
     rc-update rc-service rc-status emerge eselect \
     chmod pkill mount umount arch-chroot \
-        reboot poweroff
+    tcpdump \
+    reboot poweroff
 
 for cmd in $cmds
     function $cmd --inherit-variable cmd
