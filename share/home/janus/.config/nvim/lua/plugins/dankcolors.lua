@@ -22,6 +22,12 @@ return {
 				base0F = '#ded0ff',
 			})
 
+			-- 透明终端：base16 直接写死 Normal 背景，setup 后立即抹掉
+			vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+			vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'none' })
+			vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+			vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none' })
+
 			vim.api.nvim_set_hl(0, 'Visual', {
 				bg = '#9d99a5',
 				fg = '#faf8ff',
