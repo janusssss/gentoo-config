@@ -2,4 +2,4 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
 SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/home/janus/\x2ecargo/bin\x1e/home/janus/go/bin
+SETUVAR fish_user_paths:/home/janus/\x2elocal/bin\x1e/home/janus/\x2ecargo/bin\x1e/home/janus/go/bin

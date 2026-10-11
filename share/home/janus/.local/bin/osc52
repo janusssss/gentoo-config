@@ -1,0 +1,14 @@
+#!/bin/sh
+# osc52 —— 把 stdin 通过 OSC52 转义序列写进终端剪贴板，SSH 场景下的 wl-copy 替代
+# 用法: echo "内容" | osc52  或  cmd | osc52
+# 落点是客户端终端，宿主机剪贴板/clipsync 不会记录
+
+payload=$(base64 --wrap=0) || exit 1
+[ -n "$payload" ] || exit 0
+
+if [ -n "$TMUX" ]; then
+  # tmux 里要套 passthrough，内部的 ESC 需要双写；要求 tmux >= 3.3 且 allow-passthrough on
+  printf '\033Ptmux;\033\033]52;c;%s\033\033\\\033\\' "$payload" > /dev/tty
+else
+  printf '\033]52;c;%s\033\\' "$payload" > /dev/tty
+fi
