@@ -48,6 +48,7 @@ net-wireless/bluetui # 管理蓝牙
 sys-apps/arch-chroot # chroot环境工具
 sys-fs/genfstab # 自动生成fstab文件
 sys-boot/os-prober # 探测别的系统
+sys-apps/ripgrep # grep的高性能版本
 
 # mDNS服务
 net-dns/avahi 
