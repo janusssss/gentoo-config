@@ -1,2 +1,3 @@
 sys-kernel/surface-sources # 内核补丁
 gnome-extra/iio-sensor-proxy # 监控屏幕翻转
+sys-apps/zram-generator # 压缩内存

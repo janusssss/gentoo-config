@@ -15,7 +15,7 @@ end
 set -l cmds \
     rc-update rc-service rc-status emerge eselect dispatch-conf \
     chmod pkill mount umount arch-chroot \
-    tcpdump \
+    tcpdump dmesg \
     reboot poweroff
 
 for cmd in $cmds
