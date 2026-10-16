@@ -20,3 +20,7 @@ net-fs/nfs-utils # nfs工具
 
 # arm
 app-emulation/qemu
+net-misc/sunshine # 发射器
+
+
+www-client/firefox # 自编译firefox
