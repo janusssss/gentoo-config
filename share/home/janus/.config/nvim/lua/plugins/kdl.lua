@@ -14,17 +14,5 @@ return {
         kdl = { "kdlfmt" }, -- kdl 格式化，cargo install kdlfmt
       },
     },
-    config = function(_, opts)
-      local conform = require("conform")
-      conform.setup(opts)
-
-      -- 保存时自动格式化 kdl 文件
-      vim.api.nvim_create_autocmd("BufWritePre", {
-        pattern = { "*.kdl" },
-        callback = function()
-          conform.format({ async = false, lsp_fallback = true })
-        end,
-      })
-    end,
   },
 }
