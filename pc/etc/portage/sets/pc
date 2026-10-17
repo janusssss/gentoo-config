@@ -24,3 +24,5 @@ net-misc/sunshine # 发射器
 
 
 www-client/firefox # 自编译firefox
+
+net-dns/dnsmasq # 配置dhcp服务端
