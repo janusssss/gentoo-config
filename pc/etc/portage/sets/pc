@@ -26,3 +26,9 @@ net-misc/sunshine # 发射器
 www-client/firefox # 自编译firefox
 
 net-dns/dnsmasq # 配置dhcp服务端
+
+
+# 虚拟机
+app-emulation/qemu 
+app-emulation/libvirt
+app-emulation/virtui-manager

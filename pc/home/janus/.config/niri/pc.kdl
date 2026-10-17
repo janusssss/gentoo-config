@@ -1,4 +1,5 @@
 // 启动vnt2
 spawn-at-startup "sh" "-c" "sudo vnt2_cli -s quic://[2a01:4f8:162:54d9:1c1::]:29872 -n 27149 --ip 10.26.0.3/24"
 spawn-at-startup "sh" "-c" "sleep 3 && sudo iptables-restore < /home/janus/Projects/gentoo-config/pc/home/janus/.config/niri/script/iptables-rules"
+spawn-at-startup "sunshine"
 

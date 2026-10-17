@@ -4,3 +4,24 @@ dev-libs/libpcre2 static-libs
 sys-apps/attr static-libs 
 virtual/zlib static-libs 
 >=sys-libs/zlib-1.3.2-r1 static-libs
+
+# 虚拟机
+>=net-dns/dnsmasq-2.92 script
+
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[gui]
+# required by app-emulation/virtui-manager-3.2.0::guru
+# required by @pc
+# required by @janus
+# required by @selected
+# required by @world (argument)
+>=net-misc/spice-gtk-0.42-r4 usbredir
+# required by app-crypt/swtpm-0.10.2::gentoo
+# required by app-emulation/libvirt-12.7.0::gentoo[qemu]
+# required by dev-python/libvirt-python-12.7.0::gentoo
+# required by app-emulation/virt-manager-5.1.0-r1::gentoo[python_single_target_python3_14]
+# required by app-emulation/virtui-manager-3.2.0::guru
+# required by @pc
+# required by @janus
+# required by @selected
+# required by @world (argument)
+>=net-libs/gnutls-3.8.13 tools pkcs11

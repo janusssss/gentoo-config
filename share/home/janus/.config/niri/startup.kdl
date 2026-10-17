@@ -5,12 +5,9 @@ spawn-at-startup "foot" "-s"
 // 输入法
 spawn-at-startup "fcitx5"
 // 启动键盘模拟鼠标,openrc环境下udev没有生效,需要手动触发
-spawn-at-startup "sh" "-c" "sleep 3 && sudo modprobe -r uinput && sudo modprobe uinput && ydotoold"
+spawn-at-startup "sh" "-c" "sleep 3 && ydotoold"
 // 更换壁纸
 spawn-at-startup "sh" "-c" "waypaper --random --back swaybg"
-// 自动旋转屏幕
-spawn-at-startup "~/.config/niri/script/rotate.sh"  
-// 剪贴板守护进程
 //cliphist
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 // pipewire会话管理器，音频软件需要通过它播放声音
