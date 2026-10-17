@@ -5,3 +5,5 @@ sys-block/zram-init # 压缩内存
 
 www-client/firefox-bin 
 net-misc/moonlight # 串流使用
+
+media-libs/libva-intel-driver # 视频硬件解码 
