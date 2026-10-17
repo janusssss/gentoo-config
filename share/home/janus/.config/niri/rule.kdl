@@ -1,20 +1,29 @@
 // 粘贴板
-window-rule{
-	match app-id="shorinclip"
-	match app-id="cliphist-tui"
-  match app-id="quickterminal"
-	default-column-width { fixed 625; }
-    default-window-height { fixed 700; }
+window-rule {
+    match app-id="shorinclip"
+    match app-id="cliphist-tui"
+    match app-id="quickterminal"
+    default-column-width {
+        fixed 625
+    }
+    default-window-height {
+        fixed 700
+    }
     //min-height 800
-	open-floating true
-	default-floating-position x=0 y=18 relative-to="top"
+    open-floating true
+    default-floating-position x=0 y=18 relative-to="top"
+}
+window-rule {
+    match app-id="firefox"
+    match app-id="BambuStudio"
+    match app-id="steam_app_1903340"
+    match app-id="steam_app_2358720"
+    open-maximized-to-edges true
+}
+window-rule {
+    match app-id="foot"
+    background-effect {
+        blur true
+    }
 }
 
-
-window-rule {                                                                                            
-     match app-id="firefox"
-     match app-id="BambuStudio"
-     match app-id="steam_app_1903340"
-     match app-id="steam_app_2358720"
-     open-maximized-to-edges true
-}
