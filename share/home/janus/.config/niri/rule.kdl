@@ -20,10 +20,17 @@ window-rule {
     match app-id="steam_app_2358720"
     open-maximized-to-edges true
 }
+// 背景模糊
 window-rule {
     match app-id="foot"
+    match app-id="firefox"
     background-effect {
         blur true
     }
 }
+ // 背景透明
+//window-rule {
+ //   match app-id="firefox"
+   // opacity 0.618
+//}
 
