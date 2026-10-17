@@ -4,3 +4,4 @@ sys-block/zram-init # 压缩内存
 
 
 www-client/firefox-bin 
+net-misc/moonlight # 串流使用

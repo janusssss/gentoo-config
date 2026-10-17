@@ -12,3 +12,7 @@ app-i18n/rime-ice lua theme
 app-i18n/librime-lua -lua_single_target_lua5-1 lua_single_target_lua5-4
 
 >=sys-boot/grub-2.16 mount
+
+# moonlight 串流依赖
+>=media-libs/libsdl2-2.32.10 kms
+>=media-video/ffmpeg-8.1.3 vaapi
