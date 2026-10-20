@@ -72,4 +72,10 @@ app-portage/pycargoebuild # 处理cargo ebuild依赖
 net-im/wechat
 net-im/tencent-qq
 
+net-wireless/iw # 管理无线硬件
+net-wireless/wpa_supplicant # l连接wifi
+
+app-text/sdcv # 终端词典
+app-dicts/stardict-langdao-en-zh-gb # 英中
+app-dicts/stardict-langdao-zh-en-gb # 中英
 
