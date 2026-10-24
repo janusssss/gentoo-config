@@ -6,7 +6,8 @@ include "output.kdl"
 // 环境变量
 include "environment.kdl"
 include "rule.kdl"
-// 窗口规则include "layout.kdl"
+// 窗口规则
+include "layout.kdl"
 include "pc.kdl"
 // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
