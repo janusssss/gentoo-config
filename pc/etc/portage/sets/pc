@@ -28,3 +28,5 @@ net-dns/dnsmasq # 配置dhcp服务端
 app-emulation/qemu 
 app-emulation/libvirt
 app-emulation/virtui-manager
+
+app-containers/docker-buildx # dokcer交叉编译
