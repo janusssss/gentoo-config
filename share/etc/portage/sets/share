@@ -84,4 +84,4 @@ net-fs/nfs-utils # nfs工具
 dev-util/github-cli # gihub工具
 
 dev-util/pkgdev # ebuild工具
-app-shells/bash-completion # 基本工具
+net-misc/iperf # 网络测试工具
