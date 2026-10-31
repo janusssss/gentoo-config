@@ -25,6 +25,7 @@ proxies:
     skip-cert-verify: true
 
 rules:
+  - IP-CIDR6,2a01:4f8:162:54d9:1c1::/128,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,bytevirt
 

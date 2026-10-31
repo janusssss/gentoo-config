@@ -30,3 +30,6 @@ app-emulation/libvirt
 app-emulation/virtui-manager
 
 app-containers/docker-buildx # dokcer交叉编译
+
+
+app-containers/podman # 容器管理

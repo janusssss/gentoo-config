@@ -1,1 +1,3 @@
 sys-libs/ncurses -gpm
+
+>=net-firewall/nftables-1.1.7 json

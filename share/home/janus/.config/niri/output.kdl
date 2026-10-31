@@ -1,4 +1,12 @@
-output "eDP-1" {
-    mode "2736x1824@59.959"
-    scale 1.75
+output "Virtual-1" {
+    //    mode custom=true "1600x1067@59.959"
+    mode custom=true "2736x1824@59.959"
+    //mode custom=true "1368x912@59.959"
+    scale 2.0
 }
+ // 原来的原生分辨率配置，moonlight 串流跑不动先注释掉
+// output "Virtual-1" {
+//     mode custom=true "2736x1824@59.959"
+//     scale 1.75
+// }
+
