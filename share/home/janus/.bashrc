@@ -19,6 +19,4 @@ if [[ -n $SSH_CONNECTION ]]; then
   export WAYLAND_DISPLAY=$(ls -l /run/user/1000 | grep -oE "wayland-[0-9]+$")
 fi
 
-# 开机自动启动niri
-# 非开机启动fish
-[ "$(tty)" = "/dev/tty1" ] && NIRI_BACKEND=headless dbus-run-session /usr/local/bin/niri || fish
+. ~/.bashrc.d/*.sh
