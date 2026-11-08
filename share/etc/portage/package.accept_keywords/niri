@@ -3,3 +3,5 @@ gui-apps/xwayland-satellite ~amd64
 
 # rime輸入法
 app-i18n/rime-ice **
+
+app-office/wps-office **
