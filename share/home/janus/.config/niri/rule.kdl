@@ -1,3 +1,7 @@
+// 默认打开是全屏无边框
+window-rule {
+    open-maximized-to-edges true
+}
 // 粘贴板
 window-rule {
     match app-id="shorinclip"

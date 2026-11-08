@@ -1,5 +1,5 @@
 // 任务栏
-spawn-at-startup "waybar"
+//spawn-at-startup "waybar"
 // 终端模拟器 
 spawn-at-startup "foot" "-s"
 // 输入法
