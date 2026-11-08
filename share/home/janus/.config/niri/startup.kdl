@@ -12,4 +12,6 @@ spawn-at-startup "sh" "-c" "waypaper --random --back swaybg"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 // pipewire会话管理器，音频软件需要通过它播放声音
 spawn-at-startup "gentoo-pipewire-launcher"
+// honi AI个人助手
+spawn-at-startup "honi" "serve"
 
