@@ -13,10 +13,6 @@ if [[ $- != *i* ]]; then
   return
 fi
 
-# Put your fun stuff here.
-if [[ -n $SSH_CONNECTION ]]; then
-  export XDG_RUNTIME_DIR=/run/user/1000
-  export WAYLAND_DISPLAY=$(ls -l /run/user/1000 | grep -oE "wayland-[0-9]+$")
-fi
+export EDITOR=nvim
 
 . ~/.bashrc.d/*.sh
