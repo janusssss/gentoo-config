@@ -7,6 +7,7 @@ window-rule {
     match app-id="shorinclip"
     match app-id="cliphist-tui"
     match app-id="quickterminal"
+    open-maximized-to-edges false
     default-column-width {
         fixed 625
     }

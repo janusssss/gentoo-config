@@ -14,4 +14,4 @@ spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "gentoo-pipewire-launcher"
 // honi AI个人助手
 spawn-at-startup "honi" "serve"
-
+spawn-sh-at-startup "sleep 5 && honi serve"
