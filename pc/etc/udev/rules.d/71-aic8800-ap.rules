@@ -1,0 +1,2 @@
+# AIC8800 USB 网卡 → 上网客户端 (MAC c8:3a:35:a6:2f:3c)
+ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="c8:3a:35:a6:2f:3c", NAME="wlan_usb"

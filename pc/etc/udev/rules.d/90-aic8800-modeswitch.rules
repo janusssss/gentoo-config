@@ -1,0 +1,2 @@
+# AIC8800 USB WiFi: fake mass-storage (a69c:5721 "Aic MSC") -> WLAN mode
+ACTION=="add", SUBSYSTEM=="block", ATTRS{idVendor}=="a69c", ATTRS{idProduct}=="5721", RUN+="/usr/bin/aic8800-modeswitch %k"

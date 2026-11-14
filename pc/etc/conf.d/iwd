@@ -1,0 +1,4 @@
+# 让 iwd 忽略 wlan_ap：这张卡专门给 hostapd 开 5G 热点
+# (Intel AX200 自管理，iwd 一管就会注册管理帧过滤，
+#  hostapd 再设模式就报 "Match already configured")
+command_args="-I wlan_ap"

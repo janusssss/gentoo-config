@@ -1,0 +1,41 @@
+#!/sbin/openrc-run
+name="hotspot"
+description="Intel AX200 5G AP for streaming"
+supervisor=supervise-daemon
+command="/usr/sbin/hostapd"
+command_args="/etc/hostapd/wlan_ap.conf"
+respawn_delay=3
+respawn_max=10
+respawn_period=300
+output_log="/var/log/hotspot.log"
+error_log="/var/log/hotspot.log"
+depend() {
+    need localmount
+    before dnsmasq
+    after udev 
+    use modules
+
+}
+start_pre() {
+    local i
+    for i in $(seq 1 45); do
+        [ -d /sys/class/net/wlan_ap ] && break
+        sleep 1
+    done
+    if [ ! -d /sys/class/net/wlan_ap ]; then
+        eerror "wlan_ap not found"
+        return 1
+    fi
+    ip link set wlan_ap down 2>/dev/null || true
+    ip addr flush dev wlan_ap 2>/dev/null || true
+    ip addr add 10.2.2.1/24 dev wlan_ap
+    ip link set wlan_ap up
+}
+
+#start_post() {
+ #   rc-service dnsmasq restart
+  #  }
+
+stop_post() {
+    ip addr flush dev wlan_ap 2>/dev/null || true
+}
