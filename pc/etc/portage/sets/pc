@@ -42,3 +42,6 @@ dev-db/pgcli
 
 # 公司
 net-misc/netkit-telnetd
+
+net-libs/nodejs # 前端
+sys-apps/pnpm

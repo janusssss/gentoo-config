@@ -3,3 +3,4 @@ spawn-at-startup "sh" "-c" "sudo vnt2_cli -s quic://69.8.136.33:29872 -n 27149 -
 spawn-at-startup "sh" "-c" "sleep 3 && sudo iptables-restore < /home/janus/Projects/gentoo-config/pc/home/janus/.config/niri/script/iptables-rules"
 spawn-at-startup "sunshine"
 
+spawn-sh-at-startup "sleep 5 && honi serve"
