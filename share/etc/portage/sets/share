@@ -85,3 +85,6 @@ dev-util/github-cli # gihub工具
 
 dev-util/pkgdev # ebuild工具
 net-misc/iperf # 网络测试工具
+
+sys-fs/jmtpfs # 查看手机文件
+app-office/gnumeric # 查看office文件
