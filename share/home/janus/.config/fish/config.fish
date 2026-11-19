@@ -16,7 +16,7 @@ set -l cmds \
     rc-update rc-service rc-status emerge eselect dispatch-conf \
     chmod pkill mount umount arch-chroot \
     tcpdump dmesg ip iw \
-        reboot poweroff
+    reboot poweroff
 
 for cmd in $cmds
     function $cmd --inherit-variable cmd
@@ -26,3 +26,5 @@ end
 
 # grub
 abbr grub 'LANGUAGE=en_US.UTF-8 LANG=en_US.UTF-8 sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
+fish_vi_key_bindings
