@@ -17,7 +17,7 @@ gui-apps/swaybg
 gui-apps/waybar
 gui-apps/waypaper
 gui-apps/wl-clipboard
-gui-apps/xwayland-satellite
+#gui-apps/xwayland-satellite
 gui-wm/niri
 media-fonts/maple-mono
 app-misc/brightnessctl

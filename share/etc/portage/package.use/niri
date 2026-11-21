@@ -16,3 +16,6 @@ app-i18n/librime-lua -lua_single_target_lua5-1 lua_single_target_lua5-4
 # moonlight 串流依赖
 >=media-libs/libsdl2-2.32.10 kms
 >=media-video/ffmpeg-8.1.3 vaapi
+
+>=media-video/ffmpeg-8.1.3 opus
+media-video/obs-studio v4l
