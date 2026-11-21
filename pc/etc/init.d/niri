@@ -1,0 +1,31 @@
+#!/sbin/openrc-run
+# niri headless compositor session for janus
+
+name="niri"
+description="niri headless wayland compositor (janus)"
+
+supervisor="supervise-daemon"
+command="/usr/bin/dbus-run-session"
+command_args="/usr/local/bin/niri --session"
+command_user="janus:janus"
+pidfile="/run/niri.pid"
+respawn_delay=3
+respawn_max=10
+respawn_period=60
+stopgroup=true
+output_log="/home/janus/.local/state/niri/niri.log"
+error_log="/home/janus/.local/state/niri/niri.log"
+
+export HOME="/home/janus"
+export XDG_RUNTIME_DIR="/run/user/1000"
+export NIRI_BACKEND="headless"
+
+depend() {
+    need localmount
+    after bootmisc dbus
+}
+
+start_pre() {
+    checkpath -d -m 0700 -o janus:janus /run/user/1000
+    checkpath -d -m 0755 -o janus:janus /home/janus/.local/state/niri
+}

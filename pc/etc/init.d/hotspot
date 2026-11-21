@@ -3,7 +3,7 @@ name="hotspot"
 description="Intel AX200 5G AP for streaming"
 supervisor=supervise-daemon
 command="/usr/sbin/hostapd"
-command_args="/etc/hostapd/wlan_ap.conf"
+command_args="/etc/hostapd/MT7922.conf"
 respawn_delay=3
 respawn_max=10
 respawn_period=300
@@ -19,23 +19,19 @@ depend() {
 start_pre() {
     local i
     for i in $(seq 1 45); do
-        [ -d /sys/class/net/wlan_ap ] && break
+        [ -d /sys/class/net/wlan_mt7922 ] && break
         sleep 1
     done
-    if [ ! -d /sys/class/net/wlan_ap ]; then
-        eerror "wlan_ap not found"
+    if [ ! -d /sys/class/net/wlan_mt7922 ] ; then
+        eerror "wlan_mt7922 not found"
         return 1
     fi
-    ip link set wlan_ap down 2>/dev/null || true
-    ip addr flush dev wlan_ap 2>/dev/null || true
-    ip addr add 10.2.2.1/24 dev wlan_ap
-    ip link set wlan_ap up
+    ip link set wlan_mt7922 down 2>/dev/null || true
+    ip addr flush dev wlan_mt7922 2>/dev/null || true
+    ip addr add 10.2.2.1/24 dev wlan_mt7922
+    ip link set wlan_mt7922 up
 }
 
-#start_post() {
- #   rc-service dnsmasq restart
-  #  }
-
 stop_post() {
-    ip addr flush dev wlan_ap 2>/dev/null || true
+    ip addr flush dev wlan_mt7922] 2>/dev/null || true
 }
