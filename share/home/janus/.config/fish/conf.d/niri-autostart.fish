@@ -4,5 +4,5 @@ if status is-interactive
     and test (tty) = /dev/tty1
     and not set -q NIRI_NO_AUTOSTART
     and not pgrep -x niri >/dev/null
-    exec niri-session
+    exec /home/janus/.local/bin/niri-session
 end

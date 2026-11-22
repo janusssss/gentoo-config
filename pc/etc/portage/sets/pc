@@ -48,3 +48,6 @@ net-libs/nodejs # 前端
 sys-apps/pnpm
 sys-apps/drm_info # 查看HDMI信息
 app-misc/jq # JSON处理
+
+sys-apps/amdgpu_top
+
