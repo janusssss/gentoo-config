@@ -1,0 +1,16 @@
+#!/bin/sh
+# niri 会话启动：检测物理显示器(HDMI/DP)决定后端
+# 有显示器 → 正常 DRM 输出；无 → headless(虚拟输出, 供串流)
+has_display_connector() {
+  for s in /sys/class/drm/card*-HDMI-A-*/status /sys/class/drm/card*-DP-*/status; do
+    [ -f "$s" ] && [ "$(cat "$s")" = "connected" ] && return 0
+  done
+  return 1
+}
+if has_display_connector; then
+  unset NIRI_BACKEND
+  exec dbus-run-session /usr/bin/niri
+else
+  export NIRI_BACKEND=headless
+  exec dbus-run-session /usr/local/bin/niri
+fi

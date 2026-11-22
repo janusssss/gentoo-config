@@ -1,4 +1,4 @@
 #! /bin/bash
 
-# 登录后统一进 fish，niri 由 OpenRC 服务 /etc/init.d/niri 托管
+# 其余情况（其他 tty、或 niri 已在跑）进 fish
 exec fish
