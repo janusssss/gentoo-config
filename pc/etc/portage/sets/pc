@@ -22,6 +22,7 @@ net-misc/sunshine # 发射器
 www-client/firefox # 自编译firefox
 
 net-dns/dnsmasq # 配置dhcp服务端
+net-wireless/hostapd # 热点
 
 
 # 虚拟机
@@ -45,3 +46,4 @@ net-misc/netkit-telnetd
 
 net-libs/nodejs # 前端
 sys-apps/pnpm
+sys-apps/drm_info # 查看HDMI信息

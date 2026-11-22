@@ -90,3 +90,4 @@ sys-fs/jmtpfs # 查看手机文件
 app-office/gnumeric # 查看office文件
 
 sys-apps/usbutils # usb工具
+sys-block/zram-init # 压缩内存

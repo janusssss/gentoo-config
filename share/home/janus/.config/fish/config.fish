@@ -13,7 +13,7 @@ end
 
 # 命令加sudo
 set -l cmds \
-    rc-update rc-service rc-status emerge eselect dispatch-conf \
+    rc-update rc-service rc-status emerge eselect dispatch-conf emaint \
     chmod pkill mount umount arch-chroot \
     tcpdump dmesg ip iw \
     reboot poweroff
