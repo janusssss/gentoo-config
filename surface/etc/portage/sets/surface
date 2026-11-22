@@ -8,4 +8,4 @@ media-libs/libva-intel-driver # 视频硬件解码
 
 sys-auth/ipts-bridge # 修复electorn应用触摸失灵问题
 
-app-office/wps-office 
+# app-office/wps-office 
