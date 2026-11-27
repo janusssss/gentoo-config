@@ -15,8 +15,8 @@ end
 set -l cmds \
     rc-update rc-service rc-status emerge eselect dispatch-conf emaint \
     chmod pkill mount umount arch-chroot \
-    tcpdump dmesg ip iw \
-    reboot poweroff
+    tcpdump dmesg ip iw iptables \
+        reboot poweroff
 
 for cmd in $cmds
     function $cmd --inherit-variable cmd
