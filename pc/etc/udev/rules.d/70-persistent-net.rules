@@ -1,5 +1,5 @@
-# 固定树莓派直连网卡名 (MAC 8c:32:23:54:b1:af)
-ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="8c:32:23:54:b1:af", NAME="net_rpi"
+# 固定 Realtek RTL8125 有线网卡名 (MAC 8c:32:23:54:b1:af)
+ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="8c:32:23:54:b1:af", NAME="eth_rtl8125"
 
 # 固定 Intel AX200 网卡名 (MAC 88:f4:da:37:01:40)
 ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="88:f4:da:37:01:40", NAME="wlan_ax200"
